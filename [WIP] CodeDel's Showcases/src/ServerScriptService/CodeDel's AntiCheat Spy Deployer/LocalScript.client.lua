@@ -37,7 +37,7 @@ end)
 pcall(function()
 	local acC, c = game:GetService("ReplicatedStorage"):WaitForChild('acC'), 0
 	Heartbeat:Connect(function()
-		c = c + 1
+		c += 1
 		if c >= 60 then
 			c = 0
 			acC:FireServer(CurrentFPS)
